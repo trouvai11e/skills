@@ -16,7 +16,7 @@ cp -r math-polishing ~/.claude/skills/
 
 Restart the session; the agent will load the skill automatically when its trigger words match.
 
-## Skills
+## Available skills
 
 | Skill | Description | Example triggers |
 |---|---|---|
