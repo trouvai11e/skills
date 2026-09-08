@@ -1,6 +1,6 @@
 ---
 name: math-polishing
-description: Polish, restructure, or translate English mathematical papers (research articles, surveys, computational/applied math papers) while preserving mathematical meaning, theorem hypotheses, notation, and logical rigor. Use for titles, abstracts, introductions, main body (theorems, lemmas, proofs, numerical-result sections), conclusions, acknowledgments, and reference lists of math manuscripts, including Chinese-to-English math drafts, proofreading, and pre-submission revision. Covers math-specific wording discipline: minimal notation, proof language, theorem/lemma economy, display-equation and equation-numbering hygiene, active-voice preference, article (a/the) usage, and connective choice. Also covers revision passes (删减字句、突出重点、美容结构、善用图表) and plagiarism avoidance. Trigger on 数学论文润色、数学英文写作、数学学术论文、数学论文修改、证明润色、定理证明、英文数学写作、数学摘要、数学引言、数学文章结构、LaTeX 数学论文、math paper polishing, proof writing, theorem statement.
+description: Polish, restructure, or translate English mathematical papers (research articles, surveys, computational/applied math papers) while preserving mathematical meaning, theorem hypotheses, notation, and logical rigor. Use for titles, front matter (byline, date, keywords, Mathematics Subject Classification), abstracts, introductions, main body (theorems, lemmas, proofs, numerical-result sections), conclusions, acknowledgments, reference lists, and appendices of math manuscripts, including Chinese-to-English math drafts, proofreading, and pre-submission revision. Covers math-specific wording discipline: minimal notation, proof language, theorem/lemma economy, display-equation and equation-numbering hygiene, active-voice preference, article (a/the) usage tied to mathematical uniqueness, connective choice, and a field-vocabulary/symbol glossary (math terms, symbol read-aloud forms, context-dependent notation pitfalls). Also covers revision passes (删减字句、突出重点、美容结构、善用图表) and plagiarism avoidance. Trigger on 数学论文润色、数学英文写作、数学学术论文、数学论文修改、证明润色、定理证明、英文数学写作、数学摘要、数学引言、数学文章结构、数学关键词、MSC 分类号、数学署名、数学附录、LaTeX 数学论文、math paper polishing, proof writing, theorem statement, math keywords, MSC classification.
 ---
 
 # Mathematical Academic Paper Polishing — Router
@@ -31,10 +31,11 @@ For each axis in the manifest, decide the value using the manifest's `detect:` h
 - `paper_type` — theoretical / computational / survey. Default: theoretical.
   Computational covers numerical, applied, and modeling papers with numerical
   experiments or algorithms.
-- `section` — title / abstract / intro / body / conclusion / acknowledgments /
-  references. May be multiple. Ask the user if it is ambiguous and matters for
+- `section` — title / front-matter / abstract / intro / body / conclusion / acknowledgments /
+  references / appendix. May be multiple. Ask the user if it is ambiguous and matters for
   the polish. `body` covers everything between Introduction and Conclusions,
-  including theorems, proofs, and numerical-result sections.
+  including theorems, proofs, and numerical-result sections. `front-matter` covers
+  byline, affiliations, date, keywords, and the MSC line.
 - `language` — en or zh-to-en. Detect from the draft itself.
 
 State the detected axis values in one short line to the user before proceeding, so they can correct you cheaply. This is a progress update, not an approval gate; continue unless a necessary decision remains unresolved.
@@ -65,7 +66,8 @@ If a paragraph's structural problem cannot be fixed without inventing content (a
 The files under `references/` are deep references, not defaults. Open them on demand per the `references.on_demand` table in the manifest:
 
 - `references/worked-examples.md` — when the user asks for an example, a rule needs a concrete demonstration, or a section is drafted from scratch: curated published exemplars and revision before/after pairs. Adapt the pattern; never copy the wording into the user's draft.
-- `references/math-phrasebook.md` — when the user needs sentence patterns, proof-opening/closing formulas, connective choices, transition sentences, or figure/table reporting phrases; also when a Chinese author's draft needs idiomatic replacements.
+- `references/math-phrasebook.md` — when the user needs sentence patterns, proof-opening/closing formulas, connective choices, transition sentences, figure/table reporting phrases, or modifier families (noun/adjective/adverb); also when a Chinese author's draft needs idiomatic replacements.
+- `references/math-vocabulary.md` — when the user needs the English term for a Chinese math term, needs to write out a symbol in words at its first definition, or must check context-dependent notation (e.g., $A > 0$ meaning positive definite vs. positive matrix).
 - `references/revision-playbook.md` — when the job is a whole-manuscript pre-submission revision rather than a passage polish: deletion pass, focus check, structural cosmetics (headings, equation numbering), figure/table audit, the final checklist, and plagiarism avoidance.
 
 When the job is a whole manuscript rather than a passage, run the consistency sweep from `core/stance.md` (notation, terminology, abbreviation, and Figure/Fig. consistency) before sentence-level work, and repeat it until a pass finds nothing new.

@@ -30,10 +30,11 @@ The most frequent revision act is deletion. Cut everything dispensable; what the
 ## 3. Structural cosmetics (美容结构)
 
 - Title: shorten to the load-bearing words; remove logically redundant modifiers.
-- Section headings: consistent capitalization and numbering style; no equation numbers in headings; no singleton subsections (a 1.1 with no 1.2); delete words already present in the parent heading.
+- Section headings: consistent capitalization and numbering style; no equation numbers in headings; no singleton subsections (a 1.1 with no 1.2); delete words already present in the parent heading. Then run the navigation diagnostic — a heading succeeds for the reader if the table of contents alone shows (1) where each topic lives, (2) which section carries the paper's main contribution, and (3) the logic of the argument; it succeeds for the author if it names the point of the section rather than its topic ("Some results" fails). If the TOC cannot point to the highlight, the headings are not doing their job.
 - Equation numbers: audit against the rule — referenced later, or the conclusion formula of a theorem/lemma. Delete the rest; add missing ones. One number per logical formula, even when displayed over two lines.
 - Long single sentences with subject and verb far apart: split into two or three.
 - Abbreviations: remove all but field-standard ones.
+- Keywords: at most 10; delete over-general words (computation, mathematics) and evaluative adjectives (new, best); prefer singular nouns; check pseudo-plurals (statistics, chaos are not plurals). See `static/fragments/section/front-matter.md`.
 - Symbols/definitions introduced but barely used: inline or delete.
 - References: reformat every entry to the target journal's style; one author-name order, one abbreviation scheme, one "and"/"&" choice, complete fields, alphabetical order for math journals; delete uncited entries; add missing key works; never hide the authors' own closely related prior paper from the list — that is a honesty problem, not a style one.
 
@@ -81,6 +82,7 @@ Run every item; report pass/fix/author-action:
 - Any overlong sentence? Repeated sentence patterns? Passive convertible to active?
 - Sentence and paragraph order optimal?
 - Copied quotations, citations, and numerical data verified against the source?
+- Keywords retrievable (specific, singular, no filler)? MSC codes present and correct?
 - Quoted material properly credited? All sources listed? Anyone's work under-credited?
 
 ## 7. Plagiarism avoidance (避免抄袭)

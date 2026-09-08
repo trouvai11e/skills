@@ -6,16 +6,17 @@
 
 ## 功能范围
 
-- **按章节润色**：题目、摘要、引言、主体（定理/引理/证明、数值结果节）、结论、致谢、参考文献
+- **按章节润色**：题目、前置信息（署名/日期/关键词/MSC 分类号）、摘要、引言、主体（定理/引理/证明、数值结果节）、结论、致谢、参考文献、附录
 - **按论文类型**：理论型、计算/应用型、综述型
 - **按语言**：英文草稿润色、中文草稿/中式英语的翻译重构
 - **整稿投稿前修订**：删减字句、突出重点、美容结构（标题/章节标题/公式编号）、图表审查、检查清单
-- **数学英语专项**：符号最小化（"最好的符号是没有符号"）、证明用语、连词强调梯度、冠词 a/the 用法、主动语态优先、公式与文字的排版配合
-- **学术规范**：避免抄袭（含自我抄袭、图表授权、引用改写边界）
+- **数学英语专项**：符号最小化（"最好的符号是没有符号"）、证明用语、连词强调梯度、冠词 a/the 由数学唯一性决定、主动语态优先、修饰词名词/形容词/副词三态、公式与文字的排版配合
+- **词汇与符号手册**：分学科高频易错术语（去心邻域/强级数/殆必收敛……）、符号的英文读法与文字展开、依上下文定义的多义符号（A>0）检查
+- **学术规范**：避免抄袭（含自我抄袭、图表授权、引用改写边界）、署名伦理（字母序惯例、审稿后不得擅增删作者）
 
 ## 触发词
 
-数学论文润色、数学英文写作、数学学术论文、数学论文修改、证明润色、定理证明、英文数学写作、数学摘要、数学引言、LaTeX 数学论文、math paper polishing、proof writing、theorem statement
+数学论文润色、数学英文写作、数学学术论文、数学论文修改、证明润色、定理证明、英文数学写作、数学摘要、数学引言、数学关键词、MSC 分类号、数学署名、数学附录、LaTeX 数学论文、math paper polishing、proof writing、theorem statement
 
 ## 安装
 
@@ -39,11 +40,12 @@ manifest.yaml     声明三个坐标轴及碎片路径
 static/core/      每次必加载：立场、失败模式诊断、输出格式
 static/fragments/ 按轴加载：
   paper_type/     theoretical / computational / survey
-  section/        title / abstract / intro / body / conclusion /
-                  acknowledgments / references
+  section/        title / front-matter / abstract / intro / body / conclusion /
+                  acknowledgments / references / appendix
   language/       en / zh-to-en
 references/       按需加载：
-  math-phrasebook.md      数学英语短语库（句型、证明用语、连词、图表报告用语）
+  math-phrasebook.md      数学英语短语库（句型、证明用语、连词、修饰词三态、图表报告用语）
+  math-vocabulary.md      数学词汇与符号手册（分科术语、符号读法、多义符号陷阱）
   revision-playbook.md    整稿修订手册（删减/重点/结构/图表/清单/抄袭）
   worked-examples.md      发表级范例与改前/改后对照
 ```

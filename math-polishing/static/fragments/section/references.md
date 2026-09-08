@@ -10,6 +10,7 @@
 - Complete fields: authors, article title, journal (standard abbreviation — AMS MathSciNet maintains the canonical list, e.g., J. Math. Anal. Appl., SIAM J. Sci. Comput.), volume(issue), year, page range. Books: author, title, publisher, edition, city, year. Proceedings: also editors. Theses: the university.
 - Journal names can change over time (SIAM J. Sci. Stat. Comput. before 1993 vs. SIAM J. Sci. Comput. after); use the name at the publication year.
 - When citing a specific result from a book or long paper, add the locator: "by Banach's lemma ([7]; Theorem 4.5.3)".
+- Unpublished work is labeled with time and status: "(... 2001, unpublished)" or "(... 2001, private communication)".
 
 ## Citation style in text
 

@@ -17,6 +17,12 @@ Condensed stock patterns for mathematical English. Use to suggest idiomatic repl
 - A lower bound for $h$ can be obtained. / A routine computation gives rise to the formula.
 - Rather than give a detailed proof, we outline it. / Our goal is to show the uniqueness of the solution.
 - We will restrict ourselves to two dimensions. / We omit the proof due to its tediousness.
+- ... is referred to as the entropy. / An alternative way to view it is to use formula (3).
+- We would rather prove it here than refer to [3]. (取舍语气:宁可自证,不甩引用)
+- No matter what $x$ is, $y$ is always nonzero. / $g'$ will decrease, even if $g$ increases.
+- Substitute ... for $x$ in formula (3.2). — substitute A for B = 用 A 取代 B,方向易反。
+- Passive variant when the method, not the operator, is the point: "The solutions can be easily obtained via an elementary method." — via 后接方法名,不接人。
+- Downgrade rule: "Because of the fact that ..." is wordy — replace with because/since.
 
 ## 2. Math operation verbs (gerund + gives/we have/we obtain)
 
@@ -34,6 +40,30 @@ Condensed stock patterns for mathematical English. Use to suggest idiomatic repl
 
 Useful verbs: assume, establish, develop, derive, carry out, collect/regroup, prove/show, assert/claim, generalize/extend, illustrate/demonstrate, investigate, verify, sketch/plot, split/decompose, expect/predict, summarize, observe/find, imply/suggest/indicate, remark/point out, solve/resolve, employ, confirm, incorporate, correct, revise.
 
+More gerund patterns:
+
+- Setting the coefficient of $x^3$ to zero, we have ... / Retaining the first two terms in the power series, we find ...
+- Performing the same procedure for $j$ from 1 to $m$, we have ... / Averaging over $X_i$, we see ...
+- Using Eq. (3) in Eq. (2), we have, in light of Eq. (1), ... (in light of = 借助/鉴于,作插入语)
+- Noting that the average values of $x(t)$ and $y(t)$ are zero by definition, we have ...
+- Extracting the coefficient of $S^n$ from both sides, we can show ... / Separating real and imaginary parts of Eq. (1) gives rise to ...
+- Assuming that Eq. (1) holds (is valid), we have $u = v$. — holds / is valid 表"成立"两选。
+
+Operation verb/noun pairs (watch the traps):
+
+- computation/evaluation — calculate/compute/evaluate (evaluate 求值, compute 计算)
+- differentiation/derivative — differentiate/take the derivative; integration/integral — integrate
+- equality — equate (equate A with/to B); deformation — deform; elimination — eliminate; expansion — expand; decomposition — decompose; transformation — transform
+- factorization — factorize; triangulation — triangulate; quantification — quantify
+- performance — perform (performance 另有"性能"义: "The performance of the algorithm is consistent with the theoretical analysis.")
+- note/notion — notice (note=注记, notion=概念,勿混); treatment — treat ... as; extraction — extract; reservation/preservation — reserve/preserve/retain (retain = 截断保留)
+- picture/graph/figure — sketch/plot/graph/draw (sketch 草图, plot 精确作图)
+
+More verbs with published-sentence anchors: arrive at (arrive at the conclusion), arrange (Arranging the terms in a natural order gives ...), intend (We intend to solve the conjecture in the paper), mean (This means that the equation is unsolvable), accept (The hypothesis is accepted by most researchers), qualify (be qualified to be called ...), produce (This produces an alternative proof).
+
+- It is not difficult to verify that the estimates of Section 2 are satisfied by the solutions of equation (5). — estimates are satisfied by solutions,主语选择决定段落焦点。
+- We prove the theorem by first investigating the smoothness of the solution. / The validity of estimate (5) can be demonstrated by Example 1.
+
 ## 3. Transitions (paragraph openers)
 
 - We now turn to the mathematical formulation of the problem.
@@ -44,6 +74,9 @@ Useful verbs: assume, establish, develop, derive, carry out, collect/regroup, pr
 - We conclude this section with the proof of the maximum principle in bounded domains. / We conclude this section by pointing out that ...
 - Before proceeding further, let us remark on ...
 - Next we ask the following question ... / In conclusion, we have proved the following theorem ...
+- The crucial result in our development of local properties of weak solutions will be the following weak Harnack inequality. (预告关键结果)
+- The next theorem, also due to Smith, deals with the case in which the ratio $\lambda$ is negative. (归属插入语 also due to X)
+- We finally remark that ... (段末收束)
 
 ## 4. Proof language
 
@@ -97,6 +130,9 @@ Contrast / restriction:
 - The two basis functions are distinct quadratic functions, as illustrated in Figure 5.2.
 - Graphically, there is no observable difference between ... / As can be seen, there is good agreement between the present result and the reference computation.
 - The streamlines, shown in Fig. 3, are in good agreement with the results of Li et al. [6] and Zhang [8]; the difference in the separation points is less than 5%.
+- Figure 4.1 shows a computed solution to Burgers' equation using a high-resolution method with a time step that satisfies the CFL condition. (带条件句)
+- Computational results are shown in Figure 3.1, illustrating the oscillations that appear in this case, again with the first-order Godunov method. (非限制补充)
+- These are seen much more clearly in Figure 3.2, which shows the same solution on a different scale. (跨图指引)
 
 ## 7. Introduction stock phrases
 
@@ -108,6 +144,12 @@ Contrast / restriction:
 - There are some limitations to this approach. / There are two main motivations for the study of ...
 - The objective of this paper is twofold. The first is to ...; the other is to ...
 - To fill this gap, we present ... / We emphasize that ...
+- In the past two decades, a great deal of mathematical effort in ... has been devoted to the study of ...
+- There has been renewed interest in this technique, originated by Smith 100 years ago, for ...
+- It should be pointed out that a number of issues related to ... are still unclear. For example, ...
+- One of the most interesting and physically important features of ... is ... / This has been proven successful, for instance, in solving ...
+- A related problem was studied by ... / An alternative to solving ... is to solve the following equation.
+- Outline reader-route annotation: "Results ... are summarized in Section 3, which can be read without knowledge of the details of our numerical method presented in Section 4."
 
 ## 8. Conclusion stock phrases
 
@@ -128,3 +170,40 @@ after all, as has been said, at any rate, even so, finally, for these reasons, i
 - with respect to / corresponding to / associated with / by means of / strictly speaking / roughly speaking
 - qualitatively / quantitatively / explicitly / implicitly / it is well known that / it is not surprising that / it turns out that
 - the proof of Lemma 2 is similar to that of Lemma 1 / we refer to [1, 2] for details / this is the first of a series of papers
+
+Integral manipulation and terms: take the derivative under the integral sign with respect to $s$ / exchange the order of integration / comparing the coefficients of both sides / all the terms within the parentheses (brackets, braces) / get rid of the parentheses / top (bottom) row / collect the like terms.
+
+Geometric constructions: pass through the origin / the line passing through the two points / the plane determined by the three points / along the positive $x$ axis.
+
+Contradiction and alternatives: suppose the conclusion is not true / the proof is by contradiction / an alternative method of proof is ... / an argument similar to the one used in Section 2 shows that ...
+
+Generic-constant and scope declarations: we use $C$ to denote a generic constant / we will restrict ourselves to two dimensions / square matrix of arbitrary dimensions / the initial-boundary value problem.
+
+Cross-reference family: as stated in the previous section / as mentioned above / as shown in Fig. 1 / as will be shown in Section 5 / as indicated in Table 1 / as we anticipated (not "as what we have anticipated").
+
+Stance and hedging: it is not clear whether the result is sharp (sharp=最优) / a proof is quite involved (involved=繁琐) / choosing the right initial data is a rather subtle issue / it is desirable to use ... / this needs a careful examination / we shall return to this problem later / there is a well-known analogy between A and B / our view somewhat parallels that of Smith (1998).
+
+Tone particles: for ease of notation / for simplicity of presentation / in a broad (narrow) sense / to some extent / briefly speaking / roughly the same / intuitively / against intuition / on the contrary / in contrast to / as compared with / by the same token / provided (providing) that / for the sake of ... / thanks (owing) to / expressed in terms of ... / compatible (consistent) with / the data are in support of / qualitative (quantitative) result / consist of / be composed of / constitute.
+
+## 10. Modifier families (noun / adjective / adverb)
+
+Choose the word class that fits the syntactic slot; do not force a noun into an adverb's job. High-frequency families:
+
+- accuracy/exactness — accurate/exact/precise — accurately/exactly; strictness — strict — strictly; stability — stable — stably; instability — unstable
+- correctness/soundness — correct/sound — correctly/soundly; mistake/error — mistaken/wrong — mistakenly/wrongly
+- quality — qualitative — qualitatively; quantity — quantitative — quantitatively
+- basics/foundation — basic/fundamental — basically/fundamentally; completeness — complete/entire — completely/entirely
+- evidence — evident — evidently; apparentness — apparent — apparently; determination — deterministic — deterministically
+- succession — successive — successively; subsequence — subsequent — subsequently (successive=接连的, subsequent=随后的,勿混)
+- equivalence — equivalent — equivalently; explicitness — explicit — explicitly; implicitness — implicit — implicitly
+- correspondence — corresponding — correspondingly; initiation — initial — initially; caution/care — cautious/careful — cautiously/carefully
+- confidence — confident — confidently; satisfaction — satisfactory — satisfactorily; coincidence — coincident — coincidentally; truth — true — truly; identification — identical — identically
+- No common adverb exists — do not coin one: priority/prior, availability/available.
+
+Usage anchors:
+
+- Apparently the required inequality comes from the above fact. / Strictly speaking, formula (2) is not satisfied everywhere. (句首评述副词)
+- Although the explicit expression of $f$ is not available, fortunately we can obtain its derivative via the method of implicit differentiation. (not available = 得不到,地道)
+- Based on the above argument, we are confident that the next claim can be proved.
+- We thank Dr. Lee for carefully reading an earlier version of this paper. (致谢固定搭配)
+- Taking the derivative three times in succession leads to the required conclusion. (in succession = 逐次)

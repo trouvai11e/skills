@@ -20,7 +20,7 @@ Restart the session; the agent will load the skill automatically when its trigge
 
 | Skill | Description | Example triggers |
 |---|---|---|
-| [math-polishing](math-polishing/) | English polishing for mathematical academic papers: polishes titles, abstracts, introductions, main body (theorems/proofs/numerical results), conclusions, acknowledgments, and references while preserving mathematical meaning (theorem hypotheses, quantifiers, convergence orders, notation) exactly; includes a whole-manuscript revision playbook and plagiarism-avoidance rules | math paper polishing, proof writing, theorem statement, 数学论文润色 |
+| [math-polishing](math-polishing/) | English polishing for mathematical academic papers: polishes titles, front matter (byline, keywords, MSC), abstracts, introductions, main body (theorems/proofs/numerical results), conclusions, acknowledgments, references, and appendices while preserving mathematical meaning (theorem hypotheses, quantifiers, convergence orders, notation) exactly; includes a math vocabulary/symbol glossary, a whole-manuscript revision playbook, and plagiarism-avoidance rules | math paper polishing, proof writing, theorem statement, 数学论文润色 |
 
 ## Structure convention
 

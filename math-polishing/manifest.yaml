@@ -36,14 +36,18 @@ axes:
       no section context.
       `body` covers everything between Introduction and Conclusions,
       including theorem/proof blocks and numerical-result sections.
+      `front-matter` covers byline, affiliations, date, keywords, and the
+      Mathematics Subject Classification line; `appendix` covers appendices.
     values:
       title:           static/fragments/section/title.md
+      front-matter:    static/fragments/section/front-matter.md
       abstract:        static/fragments/section/abstract.md
       intro:           static/fragments/section/intro.md
       body:            static/fragments/section/body.md
       conclusion:      static/fragments/section/conclusion.md
       acknowledgments: static/fragments/section/acknowledgments.md
       references:      static/fragments/section/references.md
+      appendix:        static/fragments/section/appendix.md
     multi: true
 
   language:
@@ -63,5 +67,7 @@ references:
       path: references/worked-examples.md
     - condition: needs math sentence patterns, proof-opening/closing formulas, omitting-proof phrasing, connective choice with emphasis gradation, transition sentences between paragraphs, figure/table reporting phrases, conclusion or intro stock phrases, or idiomatic replacements for Chinese-influenced phrasing
       path: references/math-phrasebook.md
+    - condition: needs the English term for a Chinese math term (division algorithm, deleted neighborhood, almost sure convergence), needs to write out or read aloud a symbol in words (sub/sup, C0^1, absolutely-continuous measures), or must check context-dependent notation (A > 0 as positive definite vs. positive matrix) — field vocabulary, symbol read-aloud tables, notation pitfalls
+      path: references/math-vocabulary.md
     - condition: whole-manuscript pre-submission revision rather than passage polish — deletion pass, focus/highlight check, structural cosmetics (title, headings, equation numbering), figure/table audit, final checklist, or plagiarism concerns (including self-plagiarism and uncredited reuse of figures or text)
       path: references/revision-playbook.md
